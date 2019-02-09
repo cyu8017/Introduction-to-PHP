@@ -1,0 +1,2 @@
+# Introduction-to-PHP
+PHP is an open source server-side scripting language used to create dynamic, data-driven websites for such applications as web-based content management and display systems. It performs many of the same functions as ASP and ColdFusion. In this course students will learn how to use several features of this scripting language. Students will write scripting code within the class and in assignments outside of class.
