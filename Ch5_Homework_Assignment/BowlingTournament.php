@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
   <title>Bowling Tournament Registration</title>
+
 </head>
+
 <body>
+
   <form action="BowlingTournament.php" method="POST">
     <h5>Bowling Tournament Registration</h5>
     <hr>
@@ -22,7 +32,9 @@
     <br></br>
     <input type="submit" value="Submit">
   </form>
+  
 </body>
+
 </html>
 
 <?php
@@ -51,9 +63,7 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && is_numeric($_PO
   # Display the following error message.
   else if (empty($_POST['average'])) {
     echo "Average is required.";
-  }
-
-  else {
+  } else {
     # Gather the following values from the user.
     $FirstName = $_POST['first_name'];
     $LastName = $_POST['last_name'];
