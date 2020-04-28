@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
   <title>Standard Palindrome</title>
+
 </head>
+
 <body>
+
   <form action="StandardPalindrome.php" method="POST">
     <b>Enter a palindrome:</b>
-    <input type="text" name="standardpalindrome" value="<?php if ( isset($_POST['standardpalindrome']) ) echo $_POST['standardpalindrome']; ?>">
+    <input type="text" name="standardpalindrome" value="<?php if (isset($_POST['standardpalindrome'])) echo $_POST['standardpalindrome']; ?>">
     <input type="submit" name="submit" value="submit" />
   </form>
+
 </body>
+
 </html>
 
 <?php
@@ -49,7 +61,6 @@ if (isset($_POST['submit'])) {
     echo "<br>";
     echo "Please enter a valid standard palindrome";
   }
-
 } // End
 
 ?>

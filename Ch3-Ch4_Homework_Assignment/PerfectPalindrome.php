@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
   <title>Perfect Palindrome</title>
+
 </head>
+
 <body>
+
   <form action="PerfectPalindrome.php" method="POST">
     <b>Enter a perfect palindrome:</b>
-    <input type="text" name="perfectpalindrome" value="<?php if ( isset($_POST['perfectpalindrome']) ) echo $_POST['perfectpalindrome']; ?>">
+    <input type="text" name="perfectpalindrome" value="<?php if (isset($_POST['perfectpalindrome'])) echo $_POST['perfectpalindrome']; ?>">
     <input type="submit" name="submit" value="submit" />
   </form>
+
 </body>
+
 </html>
 
 <?php
@@ -33,18 +45,18 @@ if (isset($_POST['submit'])) {
     # Print the following message.
     if ($perfectpalindrome == $perfectpalindrome2) {
       echo "<br>"
-           . "Your entry of <strong>"
-           . $perfectpalindrome
-           . "</strong> is a perfect palindrome.";
+        . "Your entry of <strong>"
+        . $perfectpalindrome
+        . "</strong> is a perfect palindrome.";
     }
 
     # If the user did not enter a valid perfect palindrome,
     # Print the following error message.
     else {
       echo "<br>"
-           . "Your entry of <strong>"
-           . $perfectpalindrome
-           . "</strong> is not a perfect palindrome.";
+        . "Your entry of <strong>"
+        . $perfectpalindrome
+        . "</strong> is not a perfect palindrome.";
     }
   }
 
