@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Show Guest Book</title>
+
 </head>
+
 <body>
 
   <?php
@@ -9,8 +19,8 @@
   $DBConnect = @mysql_connect("localhost", "root", "");
   if ($DBConnect === FALSE)
     echo "<p>Unable to connect to the database server.</p>"
-        . "<p>Error code " . mysql_errno()
-        . ": " . mysql_error(). "</p>";
+      . "<p>Error code " . mysql_errno()
+      . ": " . mysql_error() . "</p>";
   else {
     $DBName = "guestbook";
     if (!@mysql_select_db($DBName, $DBConnect))
@@ -43,4 +53,5 @@
 
 
 </body>
+
 </html>
